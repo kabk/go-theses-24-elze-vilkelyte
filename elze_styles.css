@@ -1,0 +1,60 @@
+body {
+  font-family: Sporting Grotesque;
+  color: rgb(252, 223, 246);
+  font-size: large;
+
+  .heading-font {
+    font-family: Ajile , sans-serif;
+    font-size: 30px;
+    position: relative;
+    
+  }
+}
+
+.split {
+  height: 100%;
+  width: 50%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  overflow-x: hidden;
+  padding-top: 0%;
+
+  
+
+}
+
+.left {
+  left: 0;
+  background-color: #ffffff;
+  background: linear-gradient(to bottom, #ff2c92, #f0f0f0); /* Change colors as desired */
+}
+
+.right {
+  right: 0;
+  background-color: pink;
+  background: linear-gradient(to bottom, #ff2c92, #f0f0f0); /* Change colors as desired */
+}
+
+
+.content {
+  margin-left: 0%;
+}
+
+div.media-block{
+  width:100%;
+  height:100vh;
+}
+
+div.media-block video, div.media-block img{
+  width:100%;
+  height:100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+div.text-block{
+  width:100%;
+  padding:2rem;
+  box-sizing: border-box;
+}
