@@ -29,7 +29,7 @@ body {
 .right {
   right: 0;
   background: transparent;
-  overflow-x: hidden; /* Keep overflow-x:hidden to disable horizontal scrolling */
+  overflow: hidden; /* Keep overflow-x:hidden to disable horizontal scrolling */
 }
 
 /* Style the overlaid scrollbar */
@@ -50,6 +50,7 @@ div.media-block {
   width: 100%;
   height: 100vh;
 }
+
 
 div.media-block video,
 div.media-block img {
