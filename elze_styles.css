@@ -1,13 +1,14 @@
 body {
   font-family: 'Sporting Grotesque', sans-serif;
-  color: rgb(252, 223, 246);
+  color: rgb(255, 190, 246);
   font-size: large;
   margin: 0; /* Remove default margin */
 }
 
 .heading-font {
-  font-family: 'Ajile', sans-serif;
-  font-size: 30px;
+ font-family: 'Ajile', sans-serif; 
+ font-size: 30px; 
+  font-size: 15;
   text-align: center;
 }
 
@@ -80,7 +81,7 @@ nav li {
 }
 
 nav a {
-  color: #ffc9e7; /* Text color of menu items */
+  color: #ffe4f3; /* Text color of menu items */
   text-decoration: none; /* Remove underline from links */
 }
 
@@ -110,7 +111,7 @@ nav a:hover {
   text-align: center;
   overflow: hidden;
   pointer-events: none; /* Allow interactions to pass through */
-  animation: fadeOut 12s ease forwards;
+  animation: fadeOut 2s ease forwards;
 }
   
 .image-across img {
@@ -122,9 +123,19 @@ nav a:hover {
     opacity: 1;
   }
   to {
-    opacity: 0;
+    opacity: 0.2;
   }
 }
+
+  .heading-font2 {
+
+ font-family: 'Ajile', sans-serif; 
+ font-size: 30px; 
+
+  }
+
+
+
 
 
 
