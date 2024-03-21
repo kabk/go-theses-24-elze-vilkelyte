@@ -1,15 +1,46 @@
+/* FONT DECLARATION ALWAYS GOES FIRST */
+
+@font-face {
+  font-family: "Sporting Grotesque";
+  src: url("./assets/fonts/sportinggrotesque-regular.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+@font-face {
+  font-family: "Sporting Grotesque";
+  src: url("./assets/fonts/sportinggrotesque-bold.woff2") format("woff2");
+  font-weight: bold;
+  font-style: normal;
+  font-display: block;
+}
+
+@font-face {
+  font-family: "Ajile";
+  src: url("./assets/fonts/ajile.woff2") format("woff2");
+  font-weight: bold;
+  font-style: normal;
+  font-display: block;
+}
+
 body {
-  font-family: 'Sporting Grotesque', sans-serif;
-  color: rgb(255, 190, 246);
-  font-size: large;
+  font-family: "Sporting Grotesque", sans-serif;
+  /* color: #a4029c; */
+  color: #ff94ca;
+  font-size: 15px;
   margin: 0; /* Remove default margin */
 }
 
 .heading-font {
- font-family: 'Ajile', sans-serif; 
- font-size: 30px; 
-  font-size: 15;
+  display: block;
+  font-family: "Ajile", sans-serif;
+  /* color: #a4029c58; */
+  color: #fabafa;
+  font-size: 8vh;
+  /* font-size: 15; */
   text-align: center;
+  /* outline: 1px solid #F00; */
 }
 
 .split {
@@ -25,6 +56,12 @@ body {
   left: 0;
   background: transparent;
   overflow-x: hidden; /* Add overflow-x:auto to enable horizontal scrolling */
+}
+
+p {
+  text-align: justify;
+  letter-spacing: -0.025em;
+  word-spacing: -0.15em;
 }
 
 .right {
@@ -47,14 +84,17 @@ body {
   margin-left: 0; /* Remove unnecessary margin */
 }
 
-div.media-block {
+div.media-block,
+div.media-block-shadow {
   width: 100%;
   height: 100vh;
+  /* outline: 1px solid #f00; */
 }
 
-
 div.media-block video,
-div.media-block img {
+div.media-block img,
+div.media-block-shadow video,
+div.media-block-shadow img {
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -65,8 +105,59 @@ div.text-block {
   position: sticky;
   top: 0;
   width: 100%;
-  padding: 4rem;
+  padding: 3rem;
   box-sizing: border-box;
+}
+
+#Zarissa-Line-Height {
+  line-height: normal;
+}
+
+#navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  opacity: 1;
+  transition: 0.3s;
+  background-color: white;
+  margin-left: 0vw;
+  padding-right: 8vw;
+  padding-left: 8vw;
+  height: 100vh;
+  width: 50vw;
+  padding-top: 5%;
+  font-size: 2.5vh;
+  text-indent: -0.78em;
+  box-sizing: border-box;
+}
+
+nav ul li a {
+  text-decoration: none;
+  display: inline-block;
+  color: #fd67b2;
+  padding: 5px 8px; /* Adjust padding */
+  border-radius: 5px; /* Add some border radius for style */
+}
+
+.toggle-button {
+  z-index: 3;
+  display: block;
+  position: fixed;
+  top: 1.25rem;
+  left: 1.25rem;
+  background-color: #00000000;
+  border-color: #00000000;
+  font-size: 6vh;
+  cursor: pointer;
+  animation: glowing 1.5s infinite alternate;
+  font-size: 36px; /* Adjust the font size as needed */
+  color: #fff; /* Set the color of the text */
+  z-index: 99999999999999;
+}
+
+#navbar.collapsed {
+  display: none;
 }
 
 nav ul {
@@ -77,7 +168,7 @@ nav ul {
 nav li {
   display: inline; /* Display menu items horizontally */
   margin: 0 15px; /* Adjust the horizontal spacing between menu items */
-  line-height: 2; /* Adjust the vertical spacing between menu items */
+  line-height: 2.5; /* Adjust the vertical spacing between menu items */
 }
 
 nav a {
@@ -96,11 +187,10 @@ nav a:hover {
   z-index: 999;
   animation: fadeOut 12s ease forwards;
   overflow: visible; /* Adjust the overflow property as needed */
-  /* position: relative;
+/* position: relative;
   margin-top: -100px; /* Adjust this value to position the image */
-  /* text-align: center; */
-  /* scale: 20%; */
-
+/* text-align: center; */
+/* scale: 20%; */
 
 .image-across {
   position: fixed;
@@ -113,7 +203,7 @@ nav a:hover {
   pointer-events: none; /* Allow interactions to pass through */
   animation: fadeOut 2s ease forwards;
 }
-  
+
 .image-across img {
   max-width: 100%;
 }
@@ -127,16 +217,143 @@ nav a:hover {
   }
 }
 
-  .heading-font2 {
+@keyframes glowing {
+  0% {
+    text-shadow: 0 0 10px #00aeef, 0 0 20px #00aeef, 0 0 30px #00aeef;
+  }
+  50% {
+    text-shadow: 0 0 20px #00aeef, 0 0 30px #00aeef, 0 0 40px #00aeef;
+  }
+  100% {
+    text-shadow: 0 0 10px #00aeef, 0 0 20px #00aeef, 0 0 30px #00aeef;
+  }
+}
 
- font-family: 'Ajile', sans-serif; 
- font-size: 30px; 
+.heading-font2 {
+  font-family: "Ajile", sans-serif;
+  font-size: 30px;
+}
+.topvideo {
+  width: 100%;
+  height: 100vh;
+}
+div.topvideo video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
 
+.image-container {
+  width: 100%; /* Set the width of the container */
+  max-width: 1080px; /* Set maximum width if needed */
+  height: auto; /* Allow the height to adjust automatically based on the image's aspect ratio */
+  margin: 0 auto; /* Center the container horizontally */
+  overflow: hidden; /* Hide any overflowing content */
+  margin-top: 2.5vh;
+}
+
+.fit-image {
+  width: 100%; /* Make the image fill the container's width */
+  height: auto; /* Allow the height to adjust automatically based on the image's aspect ratio */
+  object-fit: cover; /* Scale the image as large as possible while maintaining aspect ratio and covering the container */
+}
+
+.image-container2 {
+  width: 100%;
+  height: 100%;
+}
+
+.footnote {
+  /* color: #fd67b2; */
+  display: none; /* Hide the footnote content by default */
+}
+
+.footnote:target {
+  /* color: #fd67b2; */
+  display: block; /* Display the footnote content when its target is in the URL */
+}
+.image-container img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.image-container .caption {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0);
+  color: white;
+  padding: 10px;
+  text-align: left;
+  font-size: 12px;
+  font-style: italic;
+  font-family: "Ajile";
+}
+
+.caption {
+  font-family: "Ajile";
+  color: #fd67b2;
+  padding-top: 15%;
+  padding-bottom: 5%;
+  margin-bottom: 5%;
+  margin-top: 5%;
+  text-align: left;
+  font-size: 20px;
+  font-style: italic;
+}
+
+#VisualEssay {
+  margin-left: -6vw;
+  font-family: "Ajile";
+  position: relative;
+  width: 50vh;
+  height: 50vh;
+}
+
+#transparent-title {
+  opacity: 0;
+  position: absolute;
+}
+
+@media only screen and (max-width: 767px) {
+  #navbar {
+    position: fixed;
+    padding-top: 10vh;
+    z-index: 2;
+    opacity: 1;
+    transition: 0.3s;
+    background-color: white;
+    margin-left: 0vw;
+    padding-right: 4.75vw;
+    padding-left: 15vw;
+    height: 100vh;
+    padding-top: 5%;
+    font-size: 2vh;
+    text-indent: -0.78em;
   }
 
+  .split {
+    width: 100%;
+    height: 50%;
+  }
 
+  .left {
+    left: 0;
+    top: 50%;
+    background: transparent;
+  }
+  div.text-block {
+    padding: 1rem;
+  }
 
-
-
-
-
+  .image-across {
+    transform: rotate(90deg);
+    width: 100em;
+    height: auto;
+    scale: 1.8;
+    margin-top: 30vh;
+  }
+}

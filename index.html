@@ -7,12 +7,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Pleasers as Entry To My Alter Ego</title>
   <title>Elze's Thesis Website</title>
+  <link rel="icon" type="image/x-icon" href="assets/images/kiss_favicon.png">
   <link rel="stylesheet" href="elze_styles.css"> 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
   <style>
 
-
-html, body {
+    html, body {
       overflow: hidden;
     }
     /* Add custom styles for the menu bar */
@@ -39,70 +39,114 @@ html, body {
       z-index: 999;
       pointer-events: none; /* Ensure pointer events pass through the image */
       animation: fadeOut 12s ease forwards;
-}
-.image-across img {
-  max-width: 100%;
-}
+    }
+    .image-across img {
+      max-width: 100%;
+    }
 
-@keyframes fadeOut {
-  from {
-    opacity: 0.7;
-  }
-  to {
-    opacity: 0.2;
-  }
-}
+    @keyframes fadeOut {
+      from {
+        opacity: 0.7;
+      }
+      to {
+        opacity: 0.2;
+      }
+    }
 
-<style>
-  nav {
-    position: relative; /* Add position relative for positioning */
-    text-align: left; /* Align menu items to the left */
-  }
+  </style>
 
-  nav ul {
-    position: relative; /* Add position relative for positioning */
-    text-align: center; /* Align menu items to the center */
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-    z-index: 1; /* Ensure the menu items are above the background image */
-  }
+  <style>
+    nav {
+      position: relative; /* Add position relative for positioning */
+      text-align: left; /* Align menu items to the left */
+    }
 
-  nav ul:before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    /* background-image: url('assets/images/starz.png'); */
-    background-size: cover;
-    z-index: -1; /* Set background image behind the menu items */
-  }
+    nav ul {
+      position: relative; /* Add position relative for positioning */
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+      z-index: 1; /* Ensure the menu items are above the background image */
+    }
 
-  nav ul li {
-    margin-bottom: 5px; /* Adjust spacing between items */
-  }
+    nav ul:before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      /* background-image: url('assets/images/starz.png'); */
+      background-size: cover;
+      z-index: -1; /* Set background image behind the menu items */
+    }
 
-  nav ul li a {
-    text-decoration: none;
-    color: rgb(255, 142, 225);
-    display: inline-block;
-    padding: 5px 8px; /* Adjust padding */
-    font-size: 12px; /* Adjust font size */
-    border-radius: 5px; /* Add some border radius for style */
-  }
-</style>
+    nav ul li {
+      margin-bottom: 5px; /* Adjust spacing between items */
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: rgb(255, 142, 225);
+      display: inline-block;
+      padding: 5px 8px; /* Adjust padding */
+      border-radius: 5px; /* Add some border radius for style */
+    }
+  </style>
 
 
   
 </head>
+
+
 <body>
 
   <div class="image-across"> 
     <img src="assets/images/try7.png" alt="Pleasers as Entry To My Alter Ego"> 
-    </div> 
-    
+  </div> 
+
+
+
+  <button id="menuBtn" class="toggle-button">💋</button>
+
+  <!-- Menu bar -->
+    <nav id="navbar" class="collapsed">
+
+      <ul>
+
+        <source src="assets/images/starz.png"  alt="menu starz"> 
+      
+        <li><a href="#abstract"><i class="fas fa-star"></i> Abstract 💝 </a></li>
+      </ul>
+      <ul>
+        <li><a href="#introduction"><i class="fas fa-star"></i> Introduction 💖 </a></li>
+      </ul>
+      <ul>
+        <li><a href="#aquired-aesthetics"><i class="fas fa-star"></i> Acquired Aesthetics 💗 </a></li>
+      </ul>
+      <ul>
+        <li><a href="#materialism-and-desire"><i class="fas fa-star"></i> Materialism and Desire 💞 </a></li>
+      </ul>
+      <ul>
+        <li><a href="#materialism-and-feminism"><i class="fas fa-star"></i> Materialism and Feminism 🩷 </a></li>
+      </ul>
+      <ul>
+        <li><a href="#introducing-zarissa"><i class="fas fa-star"></i> Introducing Zarissa 😍 </a></li>
+      </ul>
+      <ul>
+        <li><a href="#the-male-gaze"><i class="fas fa-star"></i> The Male Gaze 👀 </a></li>
+      </ul>
+      <ul>
+        <li><a href="#the-sinful-woman-as-a-threat"><i class="fas fa-star"></i> The ‘Sinful’ Woman As A Threat 💘 </a></li>
+      </ul>
+      <ul>
+        <li><a id="Zarissa-Line-Height" href="#how-zarissa-rejects-the-male-gaze-and-patriarchy-in-her-pleasers"><i class="fas fa-star"></i> How Zarissa Rejects The Male Gaze And Patriarchy In Her Pleasers 💋 </a></li>
+      </ul>
+      <ul>
+        <li><a href="#conclusion"><i class="fas fa-star"></i> Conclusion 😘 </a></li>
+      </ul>
+    </nav>
+
   
 
 <div class="scrollable-content"> 
@@ -112,7 +156,7 @@ html, body {
       
       <div class="content">
 
-        <div class="media-block">
+        <div class="media-block-shadow">
             <video width="1080" height="1920" autoplay loop muted> 
          <source src="assets/images/Pleasers4web.mp4" type="video/mp4"> 
            Your browser does not support the video tag. 
@@ -125,42 +169,7 @@ html, body {
           <!-- <h1 class="heading-font2" > Pleasers as Entry to My Alter Ego </H3> -->
   
 
-    <!-- Menu bar -->
-<nav>
-  <ul>
-
-    <source src="assets/images/starz.png"  alt="menu starz"> 
-  
-    <li><a href="#Abstract"><i class="fas fa-star"></i> Abstract</a></li>
-  </ul>
-  <ul>
-    <li><a href="#introduction"><i class="fas fa-star"></i> Introduction</a></li>
-  </ul>
-  <ul>
-    <li><a href="#aesthetics"><i class="fas fa-star"></i> Acquired Aesthetics</a></li>
-  </ul>
-  <ul>
-    <li><a href="#materialism and Desire"><i class="fas fa-star"></i> Materialism and Desire</a></li>
-  </ul>
-  <ul>
-    <li><a href="#Materialism and feminism"><i class="fas fa-star"></i> Materialism and Feminism</a></li>
-  </ul>
-  <ul>
-    <li><a href="#introducing Zarissa"><i class="fas fa-star"></i> Introducing Zarissa</a></li>
-  </ul>
-  <ul>
-    <li><a href="#The Male Gaze"><i class="fas fa-star"></i> The Male Gaze</a></li>
-  </ul>
-  <ul>
-    <li><a href="#The ‘Sinful’ Women As Threat"><i class="fas fa-star"></i> The ‘Sinful’ Women As Threat</a></li>
-  </ul>
-  <ul>
-    <li><a href="#How Zarissa Rejects The Male Gaze And Patriarchy In Her Pleasers"><i class="fas fa-star"></i>How Zarissa Rejects The Male Gaze And Patriarchy In Her Pleasers</a></li>
-  </ul>
-  <ul>
-    <li><a href="#Conclusion"><i class="fas fa-star"></i> Conclusion</a></li>
-  </ul>
-</nav>
+    
 
 
   
@@ -173,8 +182,8 @@ html, body {
        
 
 
-          <div id="Abstract" class="anchor"> 
-          <H3 class="heading-font" > Abstract </H3>
+          <div id="abstract" class="anchor"> 
+          <h3 class="heading-font" > Abstract 💝 </h3>
 
     
           Within my thesis I explore my alter ego, using the analogy of the Pleaser Heel as an entry to her, Zarissa. I elaborate how my alter ego was built based on my upbringing, acquired aesthetics and materialistic desires. I go on to analyze the deeper layers behind my alter ego and argue that she utilizes her sexuality, specifically by evolving in the spheres of erotic entertainment and its relation to sex work, to reject the patriarchy and the male gaze. I conclude with reflections on the intersections of sexual repression, shame and whorephobia, all of which I aim to divert through my alter ego, a personal research into bodily autonomy, female sexual power and community. 
@@ -182,58 +191,309 @@ html, body {
         </div>
         </p>
 
-        <div id="Introduction" class="anchor"> 
-        <h3 class="heading-font"> Introduction </h3>
+        <div id="introduction" class="anchor"> 
+        <h3 class="heading-font"> Introduction 💖 </h3>
       <p>
         I’d like to begin with an anecdote from my life that I’m personally fond of. When I was around 4/5 years old I was attending a kindergarten in Kaunas, Lithuania. To set the scene it was a basic kindergarten with a leftover soviet playground, ugly and rusty. One day, I’m not sure due to what occasion, my father recalls a moment when all the kids answered the question: ‘What do you want to be when you grow up?’ All the answers from the other children where quite typical, fireman, policewoman, singer ect. When it came to my turn, my parents recount an answer they'll never forget. What was my response? Well it was simple, 
 
-        <h2 class="heading-font"> ‘I want to be a beautiful girl’...  </h2>
+        <h2 class="heading-font"> ‘I want to be a <br>beautiful girl’...🎀  </h2>
         <P> Now around 20 years later I embody the fantasy of being a ‘beautiful girl’ through my alter ego. The definition of an alter ego is the following: an alternate self, which is believed to be distinct from a person's normal or true original personality. Finding one's alter ego will require finding one's other self, one with a different personality.’ For me the idea of an alter ego functions as a tool to explore everything related to design. The inspiration behind my alter ego is myself, but an enhanced and highly curated version of me, in terms of fashion, styling, attitude and self expression. I view it as a direct embodiment of elements of my life i choose to include and choose to keep. I’m designing my own narrative around a character (philosophical, physical or digital 3D) based off my influences, dreams, desires, fantasies and the powerful women I admire. If I would have to put it simply, her name’s Zarissa (started off as a complete joke a while ago), she is a sexy stripper, rich, smart and decked out in designer, and of course she owns hundreds of Pleasers. But more from her later.
         </P>
-        <H3 class="heading-font" >  What are Pleasers? </H3>
+
+        <p2 class="caption"> Image of child me. Kaunas, Lithuania 2004. </p2>
+
+
+        <H3 class="heading-font" >  What are Pleasers? 👠 </H3>
  <P>  ‘Pleasers’ is the name of the original brand that make shoes for strippers and by extension, pole dancers. They are heels ranging from 6-11 inches (15,24cm to 27,94cm) highly engineered for body movement. Pleasers have a smooth curve at the front allowing for a stable movement from a flat platform to a point, similar to the ballet position. This is practical for making prettier shapes with the body and making the feet look pointed. Another element is the way that Pleasers elongate the body, making the dancer look more flexible and allowing them to grasp the pole higher up to mount into tricks. Most importantly, Pleasers are very comfortable, they are specifically designed  for dancers to wear during long shifts at the strip clubs (8-10 hours). So next time you wonder how dancers manage in such high heels, the answer is in the shoe engineering itself. 
-  Now that you’re familiar with Pleasers we can move onto describing and exploring the phenomenon of my alter ego. Throughout my thesis I use the analogy of ‘Pleaser as entry to my alter ego’. To illustrate, when i’m in my heels pole dancing class* and all us girls put on our Pleasers we all stand taller, we’re boosted up with a whole new attitude, flexibility, energy and sexiness about us. We're still ourselves but elevated, physically and metaphorically. Theres a quote from a Minneapolis-based burlesque star, dancer, and professional dominatrix, who has about 20 pairs of Pleasers in rotation. Her description I was fond of, it went like this “The proportion just seems to power me up in a She-Ra sort of way. You know how you grab the sword and you’re like, ‘I have the power’? You put on a pair of Pleasers, and suddenly you’re in that space to access more of your own sexual power…’ This feeling, sense of own sexual power is everything I want to achieve through my alter ego. I honestly think everyone at some point in life should try on a pair of Pleasers…  Although I don’t believe you have to be a dancer in Pleasers to experience this energy that comes with wearing Pleaser heels. As i described this to one of my classmates who’s not a dancer, he recalled a memory of the first time he stole and tried on his mothers heels, and could completely relate. 
+  Now that you’re familiar with Pleasers we can move onto describing and exploring the phenomenon of my alter ego. Throughout my thesis I use the analogy of ‘Pleaser as entry to my alter ego’. To illustrate, when i’m in my heels pole dancing class<sup><a href="#" onclick="toggleFootnote('footnote1')">1</a></sup> and all us girls put on our Pleasers we all stand taller, we’re boosted up with a whole new attitude, flexibility, energy and sexiness about us. We're still ourselves but elevated, physically and metaphorically. Theres a quote from a Minneapolis-based burlesque star, dancer, and professional dominatrix, who has about 20 pairs of Pleasers in rotation. Her description I was fond of, it went like this “The proportion just seems to power me up in a She-Ra sort of way. You know how you grab the sword and you’re like, ‘I have the power’? You put on a pair of Pleasers, and suddenly you’re in that space to access more of your own sexual power…’ This feeling, sense of own sexual power is everything I want to achieve through my alter ego. I honestly think everyone at some point in life should try on a pair of Pleasers…  Although I don’t believe you have to be a dancer in Pleasers to experience this energy that comes with wearing Pleaser heels. As i described this to one of my classmates who’s not a dancer, he recalled a memory of the first time he stole and tried on his mothers heels, and could completely relate. 
   
-  *Heels here refer to Pleasers, however here in The Hague this class is usually called ‘Exotic Pole Dance’. By definition the word ‘Exotic’ means ‘originating in or characteristic of a distant foreign country.’ During my time in Berlin attending a studio called Pole Flow Berlin I learned the history and harm of using the term ‘Exotic Pole Dance’. The history like most good stories, started with strippers, but more specifically the first BIPOC Sensual Dancers who arrived in colonized North America. BIPOC Sensual Dancers, such as Belly Dancers from North Africa became fetishes for the erotic nature of their performance and their skin tone. The word ‘Erotic’ gained the meaning of ‘exotic’, ‘sensual and seductive’ minimizing BIPOC women to a sexual fantasy. 
+  <div id="footnote1" class="footnote" style="display:none;">
+
+    <p>1. Heels here refer to Pleasers, however here in The Hague this class is usually called ‘Exotic Pole Dance’. By definition the word ‘Exotic’ means ‘originating in or characteristic of a distant foreign country.’ During my time in Berlin attending a studio called Pole Flow Berlin I learned the history and harm of using the term ‘Exotic Pole Dance’. The history like most good stories, started with strippers, but more specifically the first BIPOC Sensual Dancers who arrived in colonized North America. BIPOC Sensual Dancers, such as Belly Dancers from North Africa became fetishes for the erotic nature of their performance and their skin tone. The word ‘Erotic’ gained the meaning of ‘exotic’, ‘sensual and seductive’ minimizing BIPOC women to a sexual fantasy.
+    </p>
+
+  </div>
+
+  <p2 class="caption"> Image of me receiving my first pair of Pleasers from my besties for my 22nd birthday where the theme was ‘dress like me’. </p2>
+    <p2 class="caption"> Photographed by Joel Quayson. </p>
+       
+
+         <br>
+         <br>
+
+  <div class="image-container">
+    <img src="assets/images/please20ani.jpg" class="full-image" />
+</div>
+
+<br>
+
+<p2 class="caption"> Pleaser 20th Anniversary Heel </p2>
+
 
 </div>
  </P>
 
+ <div id="aquired-aesthetics" class="anchor"> 
 
- <H3 class="heading-font" > Acquired Aesthetics </H3>
+ <H3 class="heading-font" > Acquired Aesthetics💗 </H3>
  <P> To elaborate on the feeling of elevation and accessorizing I’d like to move on to talking about my upbringing, acquired aesthetics, family history in jewelry, materialism among the women in my family and Lithuania's Soviet past. All these elements played an important role in forming and creating my alter ego. I’d like to reiterate, these are elements i choose to keep and choose to include. As i will emphasize throughout, its not random its curated. 
   Lets start from the beginning, growing up i spent a-lot of time with my lovely grandmother Aldona in Druskininkai, a small town where we lived a very simple life. But my grandmother is far from simple, she’s the most glamorous lady you'll ever meet. I’d like to reflect on how much my upbringing influenced me and my alter ego. Especially my grandmother’s and mother’s aesthetics. It was funny to realize that not everyone's grandmother gardens in sparkly platform sandals.
   </P>
+
+  <p2 class="caption"> Image of my grandmothers iconic gardening sandals.  I sadly don't have a photo of hers but this is the vibe. Do you see the Pleaser resemblance?
+  </p2>
+
 <P> So lets establish the first lesson on the agenda, looking rich. I have always been told to look rich, presentable and beautiful when I left the house. The more clothing that allude to wealth the better, the more layered jewelry, gold, silver and diamonds the better. Luckily, I come from a line of jewelers, there was always plenty to accessorize with. Jewelry in my family has always been important, it has always been important to me. I never buy jewelry, everything I wear is either made by my grandad or uncle, or passed down to me from previous generations of jewelers. I wear my jewelry with pride. I carry parts of my family with me daily. I alternate compositions with the jewelry I wear every few months. I am never in abundance of looking rich in that aspect, there is always more jewelry coming my way during birthdays and Christmas I cherish it deeply. 
   This past Christmas of 2023 I was sitting in the kitchen with my biggest muse and style inspiration, my grandma. I was wearing many layered chains and necklaces, as usual. Some of them I had just received the day before from my granddad as a gift, some are very unique chains made by him. I layer them in a way that creates a complimentary composition, my grandad and I contemplate it. It’s not random, it’s curated. As my grandma sits beside me, she looks at me and is in thought, she proceeds to say something along the lines of ‘I’m just thinking about your necklaces, how your mother would layer them the same, how i would layer them and how my mother layered them like that too. We all do the same thing and love the same thing’... For me there’s something so effortless and almost automatic in the I way developed this admiration and love for jewelry, the way I learned to design its compositions on the body. The way I learned to look rich. I always loved piling on as much as possible even as a child. I would even spend my time organizing and layering my grandma’s jewelry (see image). As I reflect, and observe, I can see how my acquired aesthetics are very present within my alter ego today and consequently my design practice. There came a point where I wondered how could I add more? More in the sense of contrast, composition, fantasy and allure.</P>
-<P> For me this is where Sexy Plexi comes into the picture. As we have already acknowledged, I adore being over accessorized. When it comes to my alter ego I like to take it to the extreme. Thus a few years ago I started ‘Sexy Plexi’, my own little jewelry business. I started with the intention of creating more contrasting pieces to create compositions with. My grandad’s jewelry is beautiful but I wanted something that was different and in line with my alternating aesthetic, something I could change up and experiment with, layer, pile on and perhaps deconstruct. Sexy Plexi as a product is individual plexiglass pieces I design & cut using the laser cutter. These pieces of plexi come in different colors and can be arranged in different ways on the body. This way of producing was so effective for me to explore my destiny of being a jewelry designer in my own contemporary way. I believe it’s a huge part of my alter ego, to pile jewelry on beyond my usual extreme. To allow myself to question how can I keep accessorizing more? And most importantly do I look rich? I often contemplate these things whilst getting dressed. And although it may sound absurd, my graphic design studies and practice taught me to analyze all these intentional design choices. I approach getting dressed, accessorizing & getting my hair and make up done the same way I would when designing a book or a poster. As I’ll keep repeating, it is not random it’s curated.
+
+  <div class="image-container">
+    <img src="assets/images/jewlz.jpg" class="full-image" />
+</div>
+
+<br>
+
+<p2 class="caption"> My grandmother’s jewelry arrangement on her cabinet.
+</p2>
+
+
+  <H3 class="heading-font" > Sexy Plexi ✨ </H3>
+  <P> For me this is where Sexy Plexi comes into the picture. As we have already acknowledged, I adore being over accessorized. When it comes to my alter ego I like to take it to the extreme. Thus a few years ago I started ‘Sexy Plexi’, my own little jewelry business. I started with the intention of creating more contrasting pieces to create compositions with. My grandad’s jewelry is beautiful but I wanted something that was different and in line with my alternating aesthetic, something I could change up and experiment with, layer, pile on and perhaps deconstruct. Sexy Plexi as a product is individual plexiglass pieces I design & cut using the laser cutter. These pieces of plexi come in different colors and can be arranged in different ways on the body. This way of producing was so effective for me to explore my destiny of being a jewelry designer in my own contemporary way. I believe it’s a huge part of my alter ego, to pile jewelry on beyond my usual extreme. To allow myself to question how can I keep accessorizing more? And most importantly do I look rich? I often contemplate these things whilst getting dressed. And although it may sound absurd, my graphic design studies and practice taught me to analyze all these intentional design choices. I approach getting dressed, accessorizing & getting my hair and make up done the same way I would when designing a book or a poster. As I’ll keep repeating, it is not random it’s curated.
 </P>
 
-<H3 class="heading-font" > Materialism And Desire</H3>
+<p2 class="caption"> Image of Sexy Plexi individual pieces, looking at them now there’s something familiar in the plastic material, made to last, but that also looks cheap. I see it in my grandma’s house with fake flowers and even in my Pleasers.
+</p2>
 
-<P> From my perspective, this obsession with looking rich, wearing exaggerated jewelry is deeply rooted in materialism. However, not materialism in its simplest form*. With the help of bell hooks I’d like to delve into exactly what type of materialism I truly mean. One that comes from being suppressed as a society for many years, one that’s manifested in many different ways, one that is not necessarily humble but is more honest and pure, a type of materialism that is a part of reclaiming, re-accessorizing and healing from Soviet trauma. Before I continue I want to make a few things clear. The matter of the Soviet Union is recent in Lithuanian history, I find that many people tend to forget that. It was only 34 years ago that Lithuania declared its independence on March 11th 1990. In total we were occupied for 50 years throughout which we experienced incredible repression, hunger, brutality, enslavement, deportation, russification and much more. I am the first generation within my family to have never experienced the oppression and cruelty of the Soviet Union. However, being born only 11 years after its collapse, I see first hand its leftovers on our society.
-  *a tendency to consider material possessions and physical comfort as more important than spiritual values.
-  What first stood out to me was the idea of respectability linked to the luxury possessions you own, but more specifically owning these expensive items, in times of extreme scarcity, sometimes whilst you can’t afford to pay rent. The best way I can describe it is, in Lithuania you will see the most expensive cars on the streets and in parking lots of Soviet apartment block buildings. My neighbor in Lithuania with his Bentley is a prime example. As bell hooks puts it ‘When it came to the issue of desiring and longing for the beautiful object, whether it was a house, a car, furniture, clothing, shoes, etc., everyone agreed, across class, that folks needed to be in touch with beauty. It was such a common way of thinking about life it seemed "natural."’ *. I personally really relate to this quote and see how many people in Lithuania don’t need these cars and nor can they afford them. But i get the feeling in our society, much like in the one bell hooks describes, this notion isn't questioned, it is commonly understood that getting this expensive car is respected and necessary.
-   *(Art on My Mind: Visual Politics. Essay Beauty Laid Bare Aesthetics in the Ordinary)
+<br>
+<br>
+
+<div class="image-container">
+  <img src="assets/images/me2.jpg" class="full-image" />
+</div>
+
+<br>
+
+<p2 class="caption">Me, over accessorized. In Sexy Plexi and my grandad’s jewelry. 
+
+</p2>
+</div>
+<div id="materialism-and-desire" class="anchor"> 
+<H3 class="heading-font" > Materialism And Desire 💞 </H3>
+
+<P> From my perspective, this obsession with looking rich, wearing exaggerated jewelry is deeply rooted in materialism. However, not materialism in its simplest form<sup><a href="#" onclick="toggleFootnote('footnote2')">2</a></sup>.With the help of bell hooks I’d like to delve into exactly what type of materialism I truly mean. One that comes from being suppressed as a society for many years, one that’s manifested in many different ways, one that is not necessarily humble but is more honest and pure, a type of materialism that is a part of reclaiming, re-accessorizing and healing from Soviet trauma. Before I continue I want to make a few things clear. The matter of the Soviet Union is recent in Lithuanian history, I find that many people tend to forget that. It was only 34 years ago that Lithuania declared its independence on March 11th 1990. In total we were occupied for 50 years throughout which we experienced incredible repression, hunger, brutality, enslavement, deportation, russification and much more. I am the first generation within my family to have never experienced the oppression and cruelty of the Soviet Union. However, being born only 11 years after its collapse, I see first hand its leftovers on our society
+  What first stood out to me was the idea of respectability linked to the luxury possessions you own, but more specifically owning these expensive items, in times of extreme scarcity, sometimes whilst you can’t afford to pay rent. The best way I can describe it is, in Lithuania you will see the most expensive cars on the streets and in parking lots of Soviet apartment block buildings. My neighbor in Lithuania with his Bentley is a prime example. As bell hooks puts it ‘When it came to the issue of desiring and longing for the beautiful object, whether it was a house, a car, furniture, clothing, shoes, etc., everyone agreed, across class, that folks needed to be in touch with beauty. It was such a common way of thinking about life it seemed "natural"’<sup><a href="#" onclick="toggleFootnote('footnote3')">3</a></sup>. I personally really relate to this quote and see how many people in Lithuania don’t need these cars and nor can they afford them. But i get the feeling in our society, much like in the one bell hooks describes, this notion isn't questioned, it is commonly understood that getting this expensive car is respected and necessary.
   There’s an objective in the need and craving and desire to own these luxury items. I personally feel it too and have also observed it manifest in different ways among my family members. Ironically the more time I spend in Western Europe the more I get the impression that the general outlook of money and materialism is starkly different. The perspective is very practical, and not at all pleasurable. If I’m honest, I find it almost sad. I grew up with the logic that money is there to be spent and enjoyed, never saved. The other day I had some extra money and I bought some new 8 inch Pleaser heels. I didn't necessarily need them but I had been obsessively dreaming about them for months. These materialistic desires in turn allow us to enjoy our lives of (fabricated) luxury. The idea of luxury also comes from the need to be surrounded by beauty, to collect beauty and to create beauty around ourselves. I see this need to collect within my family, this connection, admiration and eye for objects. Its definitely rooted in materialism though in a very humble and honest way. I can see how given our history and our past as a post soviet country we crave these objects that were once so scarce, we crave to have our own items and to keep them close, especially if beautiful. 
   </P>
+
+  <div id="footnote2" class="footnote" style="display:none;"> 
+  <p>
+    2. A tendency to consider material possessions and physical comfort as more important than spiritual values.
+  </p>
   
-<H3 class="heading-font"> Materialism and Femisium </H3>
+  </div>
+
+  <div id="footnote3" class="footnote" style="display:none;"> 
+    <p>
+      3. Art on My Mind: Visual Politics. Essay Beauty Laid Bare Aesthetics in the Ordinary.
+    
+    </div>
+
+    <p2 class="caption"> Image of my neighbor’s Bentley in Lithuania, sitting in a run down parking lot. I find it ironic.
+    </p2>
+    <br>
+    <br>
+   
+
+
+  <div class="image-container">
+    <img src="assets/images/vinted.PNG" class="full-image" />
+  </div>
+  <br>
+
+  <p2 class="caption">The 8 inch Pleasers I bought.
+  </p2>
+</div>
+  <div id="materialism-and-feminism" class="anchor"> 
+
+<H3 class="heading-font"> Materialism and Femisium 🩷 </H3>
 <P> For the women in my family the idea of collecting beauty exists in the world of fashion and glamour. Again, this notion of always being a beautiful girl/woman when exiting the house. My mother was always very glamorous no matter what occasion, outing or financial trouble she was in. Looking beautiful was always a priority. I enjoy the way Bell Hooks puts it: ‘To my mother, "nice things" were not the earth, the sky, the eggs in the henhouse, "nice things" were the objects seen in advertisements, on the screen, and in catalogs.’*. I saw first hand how as my mother progressed in life and became successful, the Chanel bags she now owns became a symbol of her own success and the dedication it took to get there. I find that the subject of materialism in feminism is frowned upon, it has been heavily associated with negative consumption habits and capitalism. As bell hooks writes, ‘Progressive feminist thinkers are more likely to critique the dangers of excessive materialism without discussing in a concrete way how we can balance a desire for beauty or luxury within an anticapitalist, anti sexist agenda.’ To the women in my family I find fulfilling these materialistic desires comes from a place of pride, pride in taking care of themselves, pride in looking good and feeling good, pride in style, pride in family history, pride in the hard work it took to finally be able to purchase these luxury items, pride in being able to have autonomy and control over their own finances, pride in their own success. The women in my family have always been hard workers and have always stressed the importance of independence - why not celebrate it by fulfilling a long term desire? I believe that hyper-materialism is not a sin, overall within feminism ‘we need to place aesthetics on our agenda’. For me that begins when I put on my Pleasers.
 </P>
 
-<H3 class="heading-font" > Introducing Zarissa </H3>
+<p2 class="caption"> Image of my mother and I in Portugal 2011. So you get an idea.
+</p2>
+</div>
+
+<div id="introducing-zarissa">
+<H3 class="heading-font"> Introducing <br> Zarissa😍 </H3>
 
 <p> Zarrissa as I call her is a fantasy, formed by my own collection of acquired aesthetics and the influences I introduced, curated and pushed to the extreme. To the outside eye she is a sexy brunette bombshell, with light green eyes, big tiddiez big ass. She’s the ultimate beauty, the highest commodity. She loves luxury, she's hyper-materialistic. She’s high maintenance, hair, nails, accessories are always on point. She's a stripper, all her friends are celebrities and strippers. Her life revolves around her stripper community. When necessary she uses her Master’s degree in criminal law to defend and protect them. She’s a girl’s girl. She’s a wanna be millionaire or billionaire. Her biggest muse - Rihanna, her biggest love - her Pleaser heels…
   Although that’s all sexy and important, I want her to be more than just ‘a beautiful girl’, I want her to exist within the world of feminism, I want her to be powerful, rebellious and an embodied rejection of the patriarchy. I want her to put aesthetics on the feminist agenda. As Elise Loehnen writes in her book ‘On Our Best Best Behavior, The Price We Pay to be Good’, ‘In the lives of women: We have been trained for goodness. Men meanwhile have been trained for power’. Well, Zarissa is trained for power, and how does she access it? Well through her Pleasers of course.
    </p>
 
-   <h2 class="heading-font"> Sooo put on your Pleasers… </h2>
-   <h2 class="heading-font"> And  take a glimpse into Zarissas world…</h2>
+   <p2 class="caption"> Image of @Zarissa4u </p2>
 
+   <H3 class="heading-font">Sooo put on your Pleasers and  take a glimpse into Zarissas world…  🥰💘💋</H3>
+
+   <!-- <h3 class="heading-font" > Sooo put on your Pleasers and  take a glimpse into Zarissas world… </h3> -->
+   
+   <div class="image-container">
+    <img src="assets/images/VE1.jpg" class="full-image" />
+  </div>
+
+<br>
+
+<p2 class="caption"> The Bedroom, my biggest muse. It’s my grandmas room in her apartment, 
+  a place i spent a-lot of time in, a room i stayed a-lot in.
+</p2>
+
+<br> 
+
+  <div class="image-container">
+    <img src="assets/images/VE12.jpg" class="full-image" />
+  </div>
+
+  <br>
+
+  <p2 class="caption"> The Bedroom, my side of the bed. And  frills on cover.
+
+  </p2>
+
+  <br>
+
+  <div class="image-container">
+    <img src="assets/images/VE13.jpg" class="full-image" />
+  </div>
+
+  <br>
+
+  <p2 class="caption"> The Bedroom, plastic bed side flower arrangements and the mirror that I get ready in.
+
+  </p2>
+
+  <br> 
+
+
+  <h3 id="transparent-title" class="heading-font">HELLO </h3>
+
+  <div class="image-container">
+    <img src="assets/images/VE14.jpg" class="full-image" />
+  </div>
+
+  <br>
+
+  <p2 class="caption"> The Bedroom, quilt.
+
+  </p2>
+
+  <br> 
+
+
+  <div class="image-container">
+    <img src="assets/images/VE15.jpg" class="full-image" />
+  </div>
+  
+  <p2 class="caption"><br> The Bedroom, decorative curtain bell. Alongide my Grandparents showcase cabinet, fish shaped bottle with matching shot glasses, used for Vodka. A very highly valued and desired item to have during the soviet union.  
+<br> 
+
+  </p2>
+  <br> 
+
+
+  <div class="image-container">
+    <img src="assets/images/VE16.jpg" class="full-image" />
+  </div>
+
+  <p2 class="caption"> <br> The Bedroom, my grandmas jewelry arrangements. I used to do this for her as a kid.
+  </p2>
+  <br> 
+
+  <h3 id="transparent-title" class="heading-font">HELLO </h3>
+
+  <div class="image-container">
+    <img src="assets/images/VE17.jpg" class="full-image" />
+  </div>
+  <br> 
+  <p2 class="caption"> Money Bag Mattress my grandparents apartment, a mattress my grandma got as a lucky charm. I must sleep on it when i’m over for good luck so i get rich. On the right is BonTon Strip Club Amsterdam, sometimes I think of applying to work there. 
+
+  </p2>
+
+  <br>
+
+  <div class="image-container">
+    <img src="assets/images/VE18.jpg" class="full-image" />
+  </div>
+  <br> 
+  <p2 class="caption"> Miss Bashful on my dream chair. I find her a big inspiration in life, shes famous, ex stripper, divorcee, lives in Berlin ofc. </p2>
+
+  <br>
+
+
+  <div class="image-container">
+    <img src="assets/images/VE19.jpg" class="full-image" />
+  </div>
+<br> 
+<p2 class="caption"> My friends Asira’s beautiful Pleaser heels that a SIMP on instagram brought for her. Next to Pretty blue Jesus, Hill of Crosses Lithuania.          
+
+</p2>
+  <br> 
+  <h3 id="transparent-title" class="heading-font">HELLO </h3>
+
+  <div class="image-container">
+    <img src="assets/images/VE110.jpg" class="full-image" />
+  </div>
+
+  <br>
+<p2 class="caption"> Egles Sanatorija Druskininkai, Saunas i grew up going to. One of my favorites.
+</p2>
+<br> 
+
+  <div class="image-container">
+    <img src="assets/images/VE111.jpg" class="full-image" />
+  </div>
+
+  <br>
+
+  <p2 class="caption"> Rihanna, my second biggest muse growing up. This is from the Iconic music video Shut Up and Drive after Good Girl Gone Bad.</p2>
+  <br> 
+
+  <div class="image-container">
+    <img src="assets/images/VE112.jpg" class="full-image" />
+  </div>
+  <br> 
+<p2 class="caption"> Sexy pic I took for my ex during my time in Berlin. I was too hot for him. And my best make up look done by my bestie Mijs.</p2>
+  <br>
+
+  <p2 class="caption"> </p2>
+  <br> 
+
+  <div class="image-container">
+    <img src="assets/images/VE113.jpg" class="full-image" />
+  </div>
+  <br>
+  <p2 class="caption">  Sexy SIMP Pleaser heels on pole. Asira sold this video for cash so enjoy this still for FREE. Asira and I loooking down on you. 
+  </p2>
+
+  <br> 
+
+  <div class="image-container">
+    <img src="assets/images/VE114.jpg" class="full-image" />
+  </div>
+<br>
+<p2 class="caption"> How i imagine my childhood dog would look like now. She’s pretty and accessorized ofc. Next to Me in Prada at pole class.
+</p2>
+
+<br> 
+
+  <div class="image-container">
+    <img src="assets/images/VE115.jpg" class="full-image" />
+  </div>
+<br> 
+  <p2 class="caption"> My Grandparents Bathroom, I’ve been staring at these dried flowers whilst brushing my teeth for over 20 years.</p2>
+<br> 
+
+</div>
 <!-- VISUAL ESSAY HERE ! -->
-
-<H3 class="heading-font" > The Male Gaze </H3>
+<div id="the-male-gaze">
+<H3 class="heading-font" > The Male Gaze 👀 </H3>
 
 <p> I’d like to start from the beginning of the term’s history but also introduce some characters in order to help me access its definition. The first character is Jessica, she is a white western blond woman who easily fits into the patriarchal norms of a submissive woman. She is the embodiment of the ‘good girl’ phenomenon. As Mikki Kendall puts it a ‘good girl is one who won't engage in any of that pesky interest in herself, her own goals and concerns, but who is instead seemingly willing to be directed’. Someone like Zarrissa who is rebellious and challenges the patriarchy is the opposite of a Jessica. Now the next character is someone who could be Jessica's boyfriend: Chad. ‘A Chad’ among internet culture ‘is a stereotypical alpha male who suppresses women in order to feel powerful, he is depicted as an attractive, successful, muscular, cocky white man’.
   Historically the term ‘Male Gaze’ all started as a feminist theory arising from cinema. As many women noticed that females in movies were being portrayed through the eyes of someone like Chad, a straight man objectifying and sexualising women with his gaze. Imagine if Chad’s eyes were a camera, that is the origin of the male gaze. A popular example of the male gaze in film can be seen in Michael Bay’s 'Transformers'. The film has been credited for making its lead female star Megan Fox into a sex symbol. Her scenes were filled with gratuitous body shots, and she primarily served as the “hot girl”. If her character would have been developed and depicted the same way as her male co stars, the story would have been very different.
@@ -242,14 +502,22 @@ However, as quick as we criticize the male gaze we are also just as quick to cri
 
 </p>
 
-<H3 class="heading-font" > The ‘Sinful’ Women As Threat </H3>
+<p2 class="caption"> Image of Megan Fox in transformers 2007. </p2>
+</div>
+<div id="the-sinful-woman-as-a-threat">
+<H3 class="heading-font" > The ‘Sinful’ Woman As A Threat 💘 </H3>
 
 <p> I’d like to look back on the history of the patriarchy with the help of Elise Loehnen’s perspective, to review how women have been sexually suppressed, and its connection to the emergence of female rivalry. It begins with the Catholic Church back in 591 A.D. Pope Gregory, the bishop of Rome in 590 A.D. claimed that Mary Magdalene, (Jesus's most devoted student and potential lover) was a prostitute for oiling the feet of Jesus with her bare hands, an extremely scandalous act. Therefore, as Pope Gregory ‘preached about the Seven Deadly Sins for the first time, he assigned these vices to Mary Magdalene and branded her a whore, conflating Mary Magdalene with the "sinful woman,". By condemning Mary, Gregory condemned all women.’ (of the white colonial world.)
   I find the real question lies in why the religious authorities at the time would insist that Mary Magdalen, Jesus's best student and potential lover, was now the embodiment of all sin? Episcopalian priest Cynthia Bourgeault explains, "Feminist scholars are inclined to see a deliberate plot here: In an emerging church hierarchy founded on the assumption of a male-only and celibate succession from the original apostles, Mary Magdalene's apostolate was clearly an anomaly and threat." How interesting, I’d like to think of this as the first signs of whorephobia, using female sexuality to reject women from any kind of recognition or apostolate, branding them as  ‘whores’ and ‘prostitutes’ with the intent to insult and deem them sinful, all out of fear and threat. Fear of losing control over women, threat that they’d become more powerful than men. It’s disappointing to see that in terms of demonizing women, especially sex workers, today not much has changed. We are still afraid of the ‘free women’, the Zarrissas. How they go against the patriarchy. So much so the fear has been reversed onto women and creates the good girls like Jessica. But as Gerda Lerner said "The system of patriarchy can function only with the cooperation of women. This cooperation is secured by a variety of means: gender indoctrination; educational deprivation; the denial to women of knowledge of their history; the dividing of women, one from the other, by defining 'respectability' and 'deviance' according to women's sexual activities; and by awarding class privileges to conforming women.” Therefore, we must choose to not ‘conform’. We must choose to put on our Pleasers and crush the patriarchy! 
 
 </p>
 
-<H3 class="heading-font" > How Zarissa Rejects The Male Gaze And Patriarchy In Her Pleasers </H3>
+<p2 class="caption"> Image of the scandalous act - Maarten van Heemskerck (Heemskerck 1498-1574 Haarlem) Magdalen washing the feet of Christ in the House of Simon 1566 Pen and brown ink, over traces of black chalk, incised for transfer 205x255mm Samuel Courtauld Trust: Witt Bequest, D.1952.RW.1954.  </p2>
+</div>
+
+<div id="how-zarissa-rejects-the-male-gaze-and-patriarchy-in-her-pleasers">
+
+<H3 class="heading-font" > How Zarissa Rejects The Male Gaze And Patriarchy In Her Pleasers 💋</H3>
 
 
 <p> I learned through practicing pole dance and researching the life of strippers how not to ‘conform’. How take to take control of our own sexuality, analyze what it means for us, in terms of being a woman, in terms of being a free woman, in terms of being a ‘beautiful’ seductive woman and a feminist woman.
@@ -257,13 +525,88 @@ However, as quick as we criticize the male gaze we are also just as quick to cri
   If choice and agency over our bodies is the first way to break out of the male gaze and patriarchy, second would be breaking away from constructs of ‘shame’, a consequence of sexual suppression. Personally, this was one of the biggest lessons i learned through pursuing pole dance, the release of shame, unlearning and relearning sexuality on my own terms in absence of ‘shame’. It’s one that’s easier said than done but one that liberated me greatly. As Jo Weldon puts it ‘I saw in performers like Cyd Charisse, as this incredible free spirit, open about sexuality and absolutely shameless. The absence of shame was absolutely the pinnacle of achievement for me in a world where everybody tries to control you by shaming you.’ I find that by putting on my Pleasers, I gain the confidence to escape this shame. 
   </p>
 
-  <H3 class="heading-font" > Conclusion </H3>
+  <p2 class="caption"> Screenshots of dancer Cyd Charisse mentioned by Jo Weldon - The Band Wagon (1953) - The Girl Hunt Ballet - Fred Astaire - Cyd Charisse - Classic Musical Comedy.  </p2>
+ 
+  <br> 
+  <br> 
+
+
+  <div class="image-container">
+    <img src="assets/images/Pw1.jpeg" class="full-image" />
+  </div>
+
+  <br> 
+
+  <div class="image-container">
+    <img src="assets/images/Pw2.jpeg" class="full-image" />
+  </div>
+
+  <br> 
+
+  <div class="image-container">
+    <img src="assets/images/Pw3.jpeg" class="full-image" />
+  </div>
+
+  <br> 
+
+  <div class="image-container">
+    <img src="assets/images/Pw4.jpeg" class="full-image" />
+  </div>
+
+  <br>
+
+  <p2 class="caption"> Somehow I see a resemblance to FKA Twigs cellophane music video of her performance on a pole.
+  </p2>
+
+  <br> 
+  <br> 
+  
+
+  <div class="image-container">
+    <img src="assets/images/f1.jpeg" class="full-image" />
+  </div>
+
+  <br> 
+
+  <div class="image-container">
+    <img src="assets/images/f2.jpeg" class="full-image" />
+  </div>
+
+  <br>
+
+  <p2 class="caption"> There’s something in the unveiling of an oversized jacket, enticing like a striptease. 
+  </p2>
+ 
+  <br>
+  <br>
+
+
+  <div class="image-container">
+    <img src="assets/images/f3.jpeg" class="full-image" />
+  </div>
+
+  <br> 
+
+  <div class="image-container">
+    <img src="assets/images/f4.jpeg" class="full-image" />
+  </div>
+<br> 
+  <p2 class="caption"> FKA Twigs in Pleasers ofc.  </p2>
+</div>
+<div id="conclusion"> 
+  <H3 class="heading-font" > Conclusion 😘 </H3>
   <p> As I reflect and conclude I’d like to circle back to what my alter ego truly means to me, and how we can progress as women and feminists based off her influence. Firstly, the function of curating my alter ego for me is a sense of control. Control of reclaiming my history, control over rejecting patriarchal norms forced onto me and my body. Within it I find great freedom, to explore femininity, curate and design Zarrissa to be this rebellious sexy figure, pushing her further than just fantasy, giving her a stance. Its funny, when I began this thesis I did refer to her as a fantasy, and in many ways she still is but in many ways I was wrong. Whilst visiting a strip club in Amsterdam I talked to Roxan a sex worker whom I questioned about what the alter ego means for her. She taught me that an alter ego is an exploration of an alternative side of my identity, one that i’m slowly becoming, one that I crave to explore, I guess Zarrissa is almost a sense of urgency. As truthfully, it is easier to function and explore under an alter ego, she's braver than me and sexier than me. Every time I put on my Pleasers I am morphing into her, but perhaps one day I won’t need them anymore.
-    In terms of the future I have a proposition that I need to get off my chest. Let’s take Zarrissa as the embodiment of the free woman, and let’s not forget she's a stripper. Lets all start looking as strippers and sex workers with admiration for their unapologetic exploration of sexuality, femininity and rejection of the patriarchy. Get rid of your disgust, ideals of sin and objectification. Secondly, lets all live a little more like pole dancers and stippers, in community, a community without judgment and female rivalry, a community where all women are welcome and not excluded.* I invite you all to put on you Pleasers and step into our world…
-    *This is exactly what i found within my pole dance community in The Hague. 
+    In terms of the future I have a proposition that I need to get off my chest. Let’s take Zarrissa as the embodiment of the free woman, and let’s not forget she's a stripper. Lets all start looking as strippers and sex workers with admiration for their unapologetic exploration of sexuality, femininity and rejection of the patriarchy. Get rid of your disgust, ideals of sin and objectification. Secondly, lets all live a little more like pole dancers and stippers, in community, a community without judgment and female rivalry, a community where all women are welcome and not excluded<sup><a href="#" onclick="toggleFootnote('footnote4')">4</a></sup>. I invite you all to put on you Pleasers and step into our world…
     </p>
 
-    <H3 class="heading-font" > BIBLIOGRAPHY </H3>
+    <div id="footnote4" class="footnote" style="display:none;"> 
+      <p>
+        4. This is exactly what i found within my pole dance community in The Hague. 
+      
+      </div>
+   
+    </div>
+    <H3 class="heading-font" > Bibliography📚 </H3>
 
     <p> Borden, Lizzie. "Whorephobia: Strippers on Art, Work, and Life." </p>
       <p>hooks, bell. "Art on My Mind: Visual Politics" and "Essay Beauty Laid Bare: Aesthetics in the Ordinary."</p>
@@ -273,7 +616,7 @@ However, as quick as we criticize the male gaze we are also just as quick to cri
      <p>Woolf, Virginia. "A Room of One's Own." </p>
      
 
-      <H3 class="heading-font" > REFERENCES </H3>
+      <H3 class="heading-font" > Refrances🤩 </H3>
     
         
         <p> “A $tripper’s Diary.” Spotify, Jana the Gypsy Pixie, open.spotify.com/show/33OJYcQCgFkmpqOynKSBlk?si=cF3ewd1iTOKlK7MUVGuhjg&utm_medium=share&utm_source=linktree&nd=1&dlsi=cf6283413d864878. Accessed 3 Mar. 2024. </p>
@@ -355,111 +698,108 @@ However, as quick as we criticize the male gaze we are also just as quick to cri
   <div class="split right" id="rightSplit">
     <div class="content">
 
-        <div class="media-block"  id="leftSplit">
+        <div class="media-block">
           <video width="1080" height="1920" autoplay loop muted>
-            <source src="assets/images/VisualEssay4Web..mp4" type="video/mp4">
+            <source src="assets/images/VisualEssay4Web.mp4" type="video/mp4">
         
           </video>
         </div>
 
+        <!-- 1 -->
+        <div class="media-block"  id="abstract">
+          <video width="1080" height="1920" autoplay loop muted>
+            <source src="assets/images/VisualEssay4Web.mp4" type="video/mp4">
+        
+          </video>
+        </div>
 
-        <div class="media-block" id="Abstract"> 
-            <a href="#abstractHeading">
-                <img src="assets/images/abstract.jpg" width="1080px" height="1400px"/> 
-            </a>
-        </div> 
-
-
- <!-- <div class="media-block" id="Abstract">  -->
-           <!-- <img src="assets/images/abstract.jpg" width="1080px" height="1400px"/>  -->
-      <!-- </div>  -->
-
-       
-      <!-- <div> -->
-      <!-- <img id="image_section1" src="assets/images/abstract.jpg" alt="Image for Section 1"> -->
-    <!-- </div> -->
-
-        <div class="media-block" id="image1">
+         <!-- 2 -->
+        <div class="media-block" id="introduction">
           <img src="assets/images/childme.jpeg" width="1080px" height="1400px"/>
         </div>
 
-        <div class="media-block" id="image2" > 
-          <img src="assets/images/please20ani.jpg" width="1080px" height="1400px"/>
+         <!-- 3 -->
+        <div class="media-block" id="what are Pleasers" > 
+          <img src="assets/images/bday.JPG" width="1080px" height="1400px"/>
         </div> 
 
-        <div class="media-block" id="image3" >  
-          <img src="assets/images/bday.JPG" width="1080px" height="1400px"/>
-        </div>
+         <!-- 4 -->
 
-        <div class="media-block" id="image4"> 
-          <img src="assets/images/bday1.JPG" width="1080px" height="1400px"/>
+        <div class="media-block" id="acquired Aesthetics" >  
+          <img src="assets/images/Sandels.png" width="1080px" height="1400px"/>
         </div>
-
-        <div class="media-block" id="image5">
-          <img src="assets/images/BdayPleasers.jpeg" width="1080px" height="1400px"/>
-        </div>
-  
-        <div class="media-block" id="image6">
-          <img src="assets/images/Lietuva.png" width="1080px" height="1400px"/>
-        </div>
-  
-        <div class="media-block" id="image7">
-          <img src="assets/images/Sandels.jpg" width="1080px" height="1400px"/>
-        </div>
-  
-        <div class="media-block" id="image8">
-          <img src="assets/images/jewlz.jpg" width="1080px" height="1400px"/>
-        </div>
-  
-        <div class="media-block" id="image9">
-          <img src="assets/images/grandma.jpeg" width="1080px" height="1400px"/>
-        </div>
-  
-        <div class="media-block" id="image10">
-          <img src="assets/images/mejewlz.jpg" width="1080px" height="1400px"/>
-        </div>
-  
-        <div class="media-block" id="image11">
+ <!-- 5 -->
+        <div class="media-block" id="Sexy Plexi">
           <img src="assets/images/Plexi.JPG" width="1080px" height="1400px"/>
         </div>
-  
-        <div class="media-block" id="image12">
-          <img src="assets/images/rootsme.jpg" width="1080px" height="1400px"/>
+ <!-- 6 -->
+        <div class="media-block" id="materialism and desire"> 
+          <img src="assets/images/Bently.jpeg" width="1080px" height="1400px"/>
         </div>
 
-        <!-- <script>
-          document.addEventListener("DOMContentLoaded", function() {
-            var imageAcross = document.querySelector('.image-across');
-      
-            window.addEventListener('scroll', function() {
-              if (window.scrollY > 100) {
-                imageAcross.style.display = 'none'; // Hide the image when scrolled down
-              } else {
-                imageAcross.style.display = 'block'; // Show the image when at the top
-              }
-            });
-          });
-      
-          // Assuming you want to remove the fade-out class after the animation completes
-          document.querySelector('.image-across').addEventListener('animationend', function() {
-            this.classList.remove('fade-out');
-            this.style.opacity = '1'; // Override opacity to keep the image visible
-          });
-      
-          // Get references to the left and right split elements
-          const leftSplit = document.getElementById('leftSplit');
-          const rightSplit = document.getElementById('rightSplit');
-      
-          // Add scroll event listener to the right split
-          rightSplit.addEventListener('scroll', function () {
-              // Set the scroll position of the left split to match the right split
-              leftSplit.scrollTop = rightSplit.scrollTop;
-          });
-        </script>
-   -->
-  </div>
-</div>
+         <!-- 7 -->
+        <div class="media-block" id="Materialism and Feminism">
+          <img src="assets/images/MotherandI.jpg" width="1080px" height="1400px"/>
+        </div>
+  
+   <!-- 8 -->
+        <div class="media-block" id="Introducing Zarissa">
+            <video width="1080" height="1920" autoplay loop muted>
+              <source src="assets/images/ZARISSA2.MP4" type="video/mp4">
+          
+            </video>
+          </div>
 
+           <!-- 9 -->
+          <div class="media-block" id="Sooo put on your Pleasers and  take a glimpse into Zarissas world… ">
+            <img src="assets/images/pleasersLOL.jpg" width="1080px" height="1400px"/>
+          </div>
+
+ <!-- 10 -->
+          <!-- <div class="media-block" id="Sooo put on your Pleasers and  take a glimpse into Zarissas world… ">
+            <img src="assets/images/pleasersLOL.jpg" width="1080px" height="1400px"/>
+          </div> -->
+
+ <!-- 11 -->
+           <!-- VISUAL ESSAY HERE//  -->
+          <div class="media-block" id="HELLO">
+            <img src="assets/images/VESplitRight6.jpg" width="1080px" height="1400px"/>
+          </div>
+ <!-- 12 -->
+          <div class="media-block" id="HELLO">
+            <img src="assets/images/VESplitRight13.jpg" width="1080px" height="1400px"/>
+          </div>
+ <!-- 13 -->
+          <div class="media-block" id="HELLO">
+            <img src="assets/images/VESplitRight23.jpg" width="1080px" height="1400px"/>
+          </div>
+  
+           <!-- 14 -->
+        <div class="media-block" id="male gaze">
+          <img src="assets/images/Megan.png" width="1080px" height="1400px"/>
+        </div>
+
+         <!-- 15 -->
+
+         <div class="media-block" id="The ‘Sinful’ Woman As A Threat">
+          <img src="assets/images/SinWomen.jpg" width="1080px" height="1400px"/>
+        </div>
+  
+        <div class="media-block" id="how Zarissa rejects">
+          <img src="assets/images/PleasersFka.jpeg" width="1080px" height="1400px"/>
+        </div>
+
+         <!-- 16 -->
+  
+        <div class="media-block" id="Conclusion">
+          <img src="assets/images/kiss.jpg" width="1080px" height="1400px"/>
+        </div>
+
+         <!-- 17-->
+
+        <div class="media-block" id="Conclusion">
+          <img src="assets/images/kiss.jpg" width="1080px" height="1400px"/>
+        </div>
 
 </div>
 
